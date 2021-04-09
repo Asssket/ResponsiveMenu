@@ -1,0 +1,115 @@
+.nav-links li{
+    color: rgba(129, 129, 129, 1);
+}
+.nav-links li a{
+    color: rgba(129, 129, 129, 1);
+}
+
+.nav-links .aguas .icon{
+    background-color: rgba(112, 211, 251, 1);
+}
+
+.nav-links .aguas .drop-content{
+    border-bottom: solid 2px rgba(112, 211, 251, 1);
+}
+.aguas .drop-content li:hover,
+.aguas:hover{
+    background-color: rgba(112, 211, 251, 1);
+}
+
+.nav-links .cervezas .icon{
+    background-color: rgba(254, 222, 70, 1);
+}
+
+.nav-links .cervezas .drop-content{
+    border-bottom: solid 2px rgba(254, 222, 70, 1);
+}
+.cervezas .drop-content li:hover,
+.cervezas:hover{
+    background-color: rgba(254, 222, 70, 1);
+}
+
+.nav-links .gaseosas .icon{
+    background-color: rgba(255, 113, 123, 1);
+}
+
+.nav-links .gaseosas .drop-content{
+    border-bottom: solid 2px rgba(255, 113, 123, 1);
+}
+.gaseosas .drop-content li:hover,
+.gaseosas:hover{
+    background-color: rgba(255, 113, 123, 1);
+}
+
+.nav-links .zumos .icon{
+    background-color: rgba(0, 219, 211, 1);
+}
+
+.nav-links .zumos .drop-content{
+    border-bottom: solid 2px rgba(0, 219, 211, 1);
+}
+.zumos .drop-content li:hover,
+.zumos:hover{
+    background-color: rgba(0, 219, 211, 1);
+}
+
+.nav-links .vinos-y-mas .icon{
+    background-color: rgba(201, 2, 20, 1);
+}
+
+.nav-links .vinos-y-mas .drop-content{
+    border-bottom: solid 2px rgba(201, 2, 20, 1);
+}
+.vinos-y-mas .drop-content li:hover,
+.vinos-y-mas:hover{
+    background-color: rgba(201, 2, 20, 1);
+}
+.espirituoas .icon{
+    background-color: rgba(160, 3, 174, 1);
+}
+
+.nav-links .espirituoas .icon{
+    background-color: rgba(160, 3, 174, 1);
+}
+
+.nav-links .espirituoas .drop-content{
+    border-bottom: solid 2px rgba(160, 3, 174, 1);
+}
+.espirituoas .drop-content li:hover,
+.espirituoas:hover{
+    background-color: rgba(160, 3, 174, 1);
+}
+
+.nav-links .meriendas .icon{
+    background-color: rgba(220, 109, 0, 1);
+}
+
+.nav-links .meriendas .drop-content{
+    border-bottom: solid 2px rgba(220, 109, 0, 1);
+}
+.meriendas .drop-content li:hover,
+.meriendas:hover{
+    background-color: rgba(220, 109, 0, 1);
+}
+
+.nav-links .promociones .icon{
+    background-color: rgba(87, 162, 0, 1);
+}
+
+.nav-links .promociones .drop-content{
+    border-bottom: solid 2px rgba(87, 162, 0, 1);
+}
+.promociones .drop-content li:hover,
+.promociones:hover{
+    background-color: rgba(87, 162, 0, 1);
+}
+
+.one{
+    background-color: rgba(220, 109, 0, 1);
+}
+.two{
+   background-color: rgba(0, 219, 211, 1); 
+}
+.three{
+    background-color: rgba(87, 162, 0, 1);
+}
