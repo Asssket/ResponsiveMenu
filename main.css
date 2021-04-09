@@ -22,6 +22,9 @@ nav{
 nav input[type="checkbox"]{
   display: none;
 }
+.content .nav-links li label{
+  display: none;
+}
 .nav-links{
   display: flex;
   flex-direction: row;
@@ -48,10 +51,11 @@ nav input[type="checkbox"]{
   text-decoration: none;
   font-size: 16px;
   padding: 0px 24px;
-  height: 80px;
+  height: auto;
   transition: all 0.3s ease;
 }
 .icon{
+  margin-top: 20px;
   height: 15px;
   width: 17px;
   transition: all 0.3s ease;
@@ -70,6 +74,9 @@ nav input[type="checkbox"]{
   visibility: visible;
 }
 
+.nav-links li:hover>a{
+  color: #fff;
+}
 .nav-links li a:hover{
   color: #fff;
 }
@@ -119,8 +126,19 @@ nav input[type="checkbox"]{
 }
 
 
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 800px){
 
+.content .nav-links li a.desktop-link{
+    display: none;
+}
+
+.content .nav-links li label{
+    line-height: 40px;
+    font-size: 20px;
+    display: block;
+    padding: 8px 18px;
+    cursor: pointer;
+}
 nav #show-menu:checked ~ .content .nav-links{
     left: 0%;
 }
