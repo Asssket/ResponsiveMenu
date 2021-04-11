@@ -5,109 +5,103 @@
     color: rgba(129, 129, 129, 1);
 }
 
-.nav-links .aguas .icon{
+.nav-links .aqua .icon{
     background-color: rgba(112, 211, 251, 1);
 }
 
-
-
-.nav-links .aguas .drop-content{
+.nav-links .aqua .drop-content{
     border-bottom: solid 2px rgba(112, 211, 251, 1);
 }
-@media screen and (max-width: 1000px){
-    .nav-links .aguas .drop-content{
-        border-bottom: none;
-    }
-}
-.aguas .drop-content li:hover,
-.aguas:hover{
+.aqua .drop-content li:hover,
+.aqua:hover{
     background-color: rgba(112, 211, 251, 1);
 }
 
-.nav-links .cervezas .icon{
+.nav-links .beer .icon{
     background-color: rgba(254, 222, 70, 1);
 }
 
-.nav-links .cervezas .drop-content{
+.nav-links .beer .drop-content{
     border-bottom: solid 2px rgba(254, 222, 70, 1);
 }
-.cervezas .drop-content li:hover,
-.cervezas:hover{
+
+.beer .drop-content li:hover,
+.beer:hover{
     background-color: rgba(254, 222, 70, 1);
 }
 
-.nav-links .gaseosas .icon{
+.nav-links .refresco .icon{
     background-color: rgba(255, 113, 123, 1);
 }
 
-.nav-links .gaseosas .drop-content{
+.nav-links .refresco .drop-content{
     border-bottom: solid 2px rgba(255, 113, 123, 1);
 }
-.gaseosas .drop-content li:hover,
-.gaseosas:hover{
+.refresco .drop-content li:hover,
+.refresco:hover{
     background-color: rgba(255, 113, 123, 1);
 }
 
-.nav-links .zumos .icon{
+.nav-links .zumo .icon{
     background-color: rgba(0, 219, 211, 1);
 }
 
-.nav-links .zumos .drop-content{
+.nav-links .zumo .drop-content{
     border-bottom: solid 2px rgba(0, 219, 211, 1);
 }
-.zumos .drop-content li:hover,
-.zumos:hover{
+.zumo .drop-content li:hover,
+.zumo:hover{
     background-color: rgba(0, 219, 211, 1);
 }
 
-.nav-links .vinos-y-mas .icon{
+.nav-links .vino .icon{
     background-color: rgba(201, 2, 20, 1);
 }
 
-.nav-links .vinos-y-mas .drop-content{
+.nav-links .vino .drop-content{
     border-bottom: solid 2px rgba(201, 2, 20, 1);
 }
-.vinos-y-mas .drop-content li:hover,
-.vinos-y-mas:hover{
+.vino .drop-content li:hover,
+.vino:hover{
     background-color: rgba(201, 2, 20, 1);
 }
-.espirituoas .icon{
+.licor .icon{
     background-color: rgba(160, 3, 174, 1);
 }
 
-.nav-links .espirituoas .icon{
+.nav-links .licor .icon{
     background-color: rgba(160, 3, 174, 1);
 }
 
-.nav-links .espirituoas .drop-content{
+.nav-links .licor .drop-content{
     border-bottom: solid 2px rgba(160, 3, 174, 1);
 }
-.espirituoas .drop-content li:hover,
-.espirituoas:hover{
+.licor .drop-content li:hover,
+.licor:hover{
     background-color: rgba(160, 3, 174, 1);
 }
 
-.nav-links .meriendas .icon{
+.nav-links .snacks .icon{
     background-color: rgba(220, 109, 0, 1);
 }
 
-.nav-links .meriendas .drop-content{
+.nav-links .snacks .drop-content{
     border-bottom: solid 2px rgba(220, 109, 0, 1);
 }
-.meriendas .drop-content li:hover,
-.meriendas:hover{
+.snacks .drop-content li:hover,
+.snacks:hover{
     background-color: rgba(220, 109, 0, 1);
 }
 
-.nav-links .promociones .icon{
+.nav-links .action .icon{
     background-color: rgba(87, 162, 0, 1);
 }
 
-.nav-links .promociones .drop-content{
+.nav-links .action .drop-content{
     border-bottom: solid 2px rgba(87, 162, 0, 1);
 }
-.promociones .drop-content li:hover,
-.promociones:hover{
+.action .drop-content li:hover,
+.action:hover{
     background-color: rgba(87, 162, 0, 1);
 }
 
@@ -119,4 +113,16 @@
 }
 .three{
     background-color: rgba(87, 162, 0, 1);
+}
+/**/@media screen and (max-width: 1199px){
+    .nav-links .aqua .drop-content,
+.nav-links .beer .drop-content,
+.nav-links .refresco .drop-content,
+.nav-links .zumo .drop-content,
+.nav-links .vino .drop-content,
+.nav-links .licor .drop-content,
+.nav-links .snacks .drop-content,
+.nav-links .action .drop-content{
+    border-bottom: none;
+}
 }

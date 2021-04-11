@@ -9,7 +9,7 @@ body{
   background-color: #ffffff;
 }
 
-.content{
+nav{
   position: fixed;
   z-index: 99;
   width: 100%;
@@ -50,7 +50,6 @@ nav input[type="checkbox"]{
 .nav-links>li>a{
   text-decoration: none;
   font-size: 16px;
-  padding: 0px 24px;
   height: auto;
   transition: all 0.3s ease;
 }
@@ -126,25 +125,33 @@ nav input[type="checkbox"]{
 }
 
 
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 1199px){
 
 .content .nav-links li a.desktop-link{
     display: none;
 }
-nav{
-display: flex;
+
+.drop-content .adbox{
+  display: none;
 }
-.menu-lines{
-  position: absolute;
-  top:10px;
+
+nav #show-menu:checked ~ .menu-icon .one{
+  margin: 0;
+  transform: translate(-10px, 8px) rotate(45deg);
+  background-color: #f3f3f3;
+} 
+nav #show-menu:checked ~ .menu-icon .two{
+  margin: 0;
+  transform: translate(-10px, 0px) rotate(-45deg);
+  background-color:#f3f3f3;
 }
-.reponsive-menu{
-  position: fixed;
-  z-index: 99;
-  width: 100%;
-  background: #ffffff;
+nav #show-menu:checked ~ .menu-icon .three{
+  margin: 0;
+  transform: translate(-10px, -7px) rotate(-45deg);
+  background-color: #f3f3f3;
 
 }
+
 .drop-content .content,
 .links li{
  padding: 0;
@@ -154,7 +161,7 @@ display: flex;
   height: 60px;
 }
 
-.reponsive-menu .nav-links li label{
+.content .nav-links li label{
     line-height: 40px;
     font-size: 20px;
     display: block;
@@ -163,13 +170,17 @@ display: flex;
     position: absolute;
     width: 100%;
 }
-nav #show-menu:checked ~ .one{
-  border: solid red;
-}
-nav #show-menu:checked ~ .reponsive-menu .nav-links{
+nav #show-menu:checked ~ .content .nav-links{
   left: 0%;
 }
-.reponsive-menu .nav-links #mobile-links:checked ~ .drop-content{
+.content .nav-links #mobile-link-aqua:checked ~ .drop-content,
+.content .nav-links #mobile-link-beer:checked ~ .drop-content,
+.content .nav-links #mobile-link-refresco:checked ~ .drop-content,
+.content .nav-links #mobile-link-zumo:checked ~ .drop-content,
+.content .nav-links #mobile-link-vino:checked ~ .drop-content,
+.content .nav-links #mobile-link-licor:checked ~ .drop-content,
+.content .nav-links #mobile-link-snacks:checked ~ .drop-content,
+.content .nav-links #mobile-link-action:checked ~ .drop-content{
   opacity: 1;
   visibility: visible;
 }
@@ -180,12 +191,11 @@ nav #show-menu:checked ~ .reponsive-menu .nav-links{
 .menu-icon{
   height: 80px;
   width: 80px;
-  display: block;
-  background-color: rgb(161, 92, 92);
-  /*margin: 0 10px;
+  margin: 0 0 0 auto;
   display: flex;  
+  flex-direction: column;
   justify-content: center;
-  align-items: flex-end;*/
+  align-items: flex-end;
 }
 .menu-lines{
   height: 80px;
@@ -197,6 +207,7 @@ nav #show-menu:checked ~ .reponsive-menu .nav-links{
   width: 6vw;
   min-width: 46px;
   border-radius: 12px;
+  transition: all 0.3s ease;
 }
 .nav-links{
   display: block;
@@ -241,20 +252,16 @@ nav #show-menu:checked ~ .reponsive-menu .nav-links{
 .links li:last-child{
   border-bottom: solid 1px rgba(243, 243, 243, 1);
 }
-.aguas .drop-content li:hover .icon{
-    background-color: rgba(112, 211, 251, 1);
-}
+
 .drop-content{
   border: none;
   top:0;
   z-index: 3;
   margin-left: 60px;
   width: 100%;
-  height: 99%;
+  height: 100%;
   border-bottom: solid 1px rgba(243, 243, 243, 1);
 }
-.aguas .drop-content .adbox{
-display: none;
-}
+
 
 }
