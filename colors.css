@@ -9,8 +9,15 @@
     background-color: rgba(112, 211, 251, 1);
 }
 
+
+
 .nav-links .aguas .drop-content{
     border-bottom: solid 2px rgba(112, 211, 251, 1);
+}
+@media screen and (max-width: 1000px){
+    .nav-links .aguas .drop-content{
+        border-bottom: none;
+    }
 }
 .aguas .drop-content li:hover,
 .aguas:hover{
