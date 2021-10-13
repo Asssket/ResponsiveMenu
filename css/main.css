@@ -11,7 +11,7 @@ body{
 
 nav{
   position: fixed;
-  z-index: 99;
+  z-index: 10;
   width: 100%;
   background: #ffffff;
   margin-top: 10px;
@@ -19,8 +19,9 @@ nav{
   box-shadow: 0 10px 10px rgb(0, 0, 0,0.1),0 -10px 10px rgb(0, 0, 0,0.1);
 
 }
+nav input[type="radio"],
 nav input[type="checkbox"]{
-  display: none;
+   display: none;
 }
 .content .nav-links li label{
   display: none;
@@ -70,7 +71,7 @@ nav input[type="checkbox"]{
 
 .nav-links li:hover .drop-content{
   opacity: 1;
-  visibility: visible;
+  display: flex;
 }
 
 .nav-links li:hover>a{
@@ -96,6 +97,7 @@ nav input[type="checkbox"]{
   line-height: 45px;
 }
 
+
 .drop-content{
   background: #fff;
   position: absolute;
@@ -103,12 +105,13 @@ nav input[type="checkbox"]{
   top: 80px;
   width: 100%;
   opacity: 0;
-  visibility: hidden;
-  display: flex;
+  display: none;
   flex-direction: row;
   justify-content: center;
   transition: all 0.3s ease;
 }
+
+
 
 .drop-content .content{
   padding: 25px 20px;
@@ -173,21 +176,17 @@ nav #show-menu:checked ~ .menu-icon .three{
 nav #show-menu:checked ~ .content .nav-links{
   left: 0%;
 }
-.content .nav-links #mobile-link-aqua:checked ~ .drop-content,
-.content .nav-links #mobile-link-beer:checked ~ .drop-content,
-.content .nav-links #mobile-link-refresco:checked ~ .drop-content,
-.content .nav-links #mobile-link-zumo:checked ~ .drop-content,
-.content .nav-links #mobile-link-vino:checked ~ .drop-content,
-.content .nav-links #mobile-link-licor:checked ~ .drop-content,
-.content .nav-links #mobile-link-snacks:checked ~ .drop-content,
-.content .nav-links #mobile-link-action:checked ~ .drop-content{
-  opacity: 1;
-  visibility: visible;
+
+.content .nav-links input:checked ~ .drop-content{
+  display: flex;
 }
+
+#mobile-link-snacks:blank
 .menu{
   display: block;
   margin: 0 0 0 auto;
 }
+
 .menu-icon{
   height: 80px;
   width: 80px;
@@ -233,8 +232,8 @@ nav #show-menu:checked ~ .content .nav-links{
   border-right: none;
 }
 .nav-links li:hover .drop-content{
-  opacity: 0;
-  visibility: hidden;
+
+  display: none;
 }
 
 .nav-links>li>a{
@@ -252,7 +251,6 @@ nav #show-menu:checked ~ .content .nav-links{
 .links li:last-child{
   border-bottom: solid 1px rgba(243, 243, 243, 1);
 }
-
 .drop-content{
   border: none;
   top:0;
@@ -262,6 +260,4 @@ nav #show-menu:checked ~ .content .nav-links{
   height: 100%;
   border-bottom: solid 1px rgba(243, 243, 243, 1);
 }
-
-
 }
